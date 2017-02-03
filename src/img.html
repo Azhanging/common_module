@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.height1200{
+				height:1500px;
+			}
+			img{
+				display: inline-block;	
+				width:200px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		
+		<div class="">
+			<img  alt="" data-src="img/IMG_0163.jpg"/>
+			<img  alt="" data-src="img/IMG_0165 2.jpg"/>
+			<img  alt="" data-src="img/IMG_0446.JPG"/>
+			<img  alt="" data-src="img/IMG_0325.jpg"/>
+		</div>
+		<div class="height1200"></div>
+		
+		
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/_require.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function(){
+				_require.config = {
+					path:[
+						'js/imgLazy.js'
+					]
+				};
+				
+				_require.use(function(){
+					var imgLazy = _require('imgLazy');
+					imgLazy();
+					
+				});
+			})();
+		</script>
+	</body>
+</html>
