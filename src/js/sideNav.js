@@ -54,9 +54,9 @@ _require.define('navChange', function() {
 		//初始化，是否存在知道你哥条件显示
 		function isHide() {
 			if($(document).scrollTop() > 500 && window.innerWidth > 1380) {
-				$(".left-nav").show(0);
+				$(sideEl).show(0);
 			} else {
-				$(".left-nav").hide(0);
+				$(sideEl).hide(0);
 			}
 		}
 		//初始化

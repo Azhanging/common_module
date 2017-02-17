@@ -32,13 +32,23 @@
 			(function(){
 				_require.config = {
 					path:[
-						'js/imgLazy.js'
+						'js/imgLazy.js',
+						'js/lazyHandler.js'
 					]
 				};
 				
 				_require.use(function(){
 					var imgLazy = _require('imgLazy');
 					imgLazy();
+					
+					var lazyHandler = _require('lazyHandler');
+					var line = new lazyHandler();
+					
+					
+					
+					line.add(function(){
+						console.log('a');
+					})
 					
 				});
 			})();
